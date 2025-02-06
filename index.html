@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="countries-container"></div>
+
+<script id="country-template" type="text/x-handlebars-template">
+<div class="country-card">
+    <img src="{{flag}}" alt="flag of {{name}}" class="country-flag">
+    <h2>{{name}}</h2>
+    <p><strong>Столиця:</strong>{{capital}}</p>
+    <p><strong>Валюта:</strong>{{currency}}</p>
+    <p><strong>Мова:</strong>{{language}}</p>
+    <p><strong>Населення:</strong>{{population}}</p>
+    <p><strong>Заражено:</strong>{{#if infected}}Так{{else}}Ні{{/if}}</p>
+</div>
+</script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/cars.js"></script>
+</body>
+</html>
